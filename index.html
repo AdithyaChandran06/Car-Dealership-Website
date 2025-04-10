@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exotic Car Dealership</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Fonts & Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- JS -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="logo">
+        <img src="media/logo-no-background.png" alt="Logo" />
+      </div>
+    </nav>
+
+    <!-- SNAP AREA: Home + Models -->
+    <div class="snap-container">
+      <!-- HOME / VIDEO -->
+      <div class="video-container" id="home">
+        <video autoplay muted loop id="video-bg">
+          <source src="media/2229697-hd_1920_1080_30fps.mp4" type="video/mp4" />
+        </video>
+        <div class="quote-overlay">
+          <p>
+            "Speed has never killed anyone. Suddenly becoming stationary… that’s
+            what gets you."
+          </p>
+          <span>- Jeremy Clarkson</span>
+        </div>
+      </div>
+
+      <!-- MODELS -->
+      <section
+        class="models-section"
+        id="models"
+        style="background-image: url('media/model1.jpg')"
+      >
+        <h2>Our Models</h2>
+        <div class="models-container">
+          <div class="model-name" onclick="changeModel('media/model1.jpg')">
+            Rolls Royce Ghost
+          </div>
+          <div class="model-name" onclick="changeModel('media/model2.jpg')">
+            Porsche Carrera GT
+          </div>
+          <div class="model-name" onclick="changeModel('media/model3.jpg')">
+            BMW Sedan
+          </div>
+          <div class="model-name" onclick="changeModel('media/model4.jpg')">
+            Toyota Supra
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- CUSTOMIZATION -->
+    <section class="customization-section" id="customization">
+      <h2>Customize Your Dream Car</h2>
+      <div class="customization-wrapper">
+        <!-- LEFT: Controls -->
+        <div class="customization-controls">
+          <select class="car-select">
+            <option value="" disabled selected>Select a Car</option>
+            <option value="Rolls Royce Ghost">Rolls Royce Ghost</option>
+            <option value="Porsche Carrera GT">Porsche Carrera GT</option>
+            <option value="BMW Sedan">BMW Sedan</option>
+            <option value="Toyota Supra">Toyota Supra</option>
+          </select>
+          <div class="color-options">
+            <button class="color-button" data-color="white">White</button>
+            <button class="color-button" data-color="black">Black</button>
+            <button class="color-button" data-color="red">Red</button>
+            <button class="color-button" data-color="blue">Blue</button>
+          </div>
+        </div>
+        <!-- RIGHT: Preview -->
+        <div class="car-preview-area">
+          <div class="car-preview">
+            <img src="media/logo.png" alt="Car Preview" id="car-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+      <div class="about-content">
+        <h2 class="about-heading">Driven By Passion, Crafted With Precision</h2>
+        <p class="about-subheading">
+          At Orion Luxe, we don't just sell cars — we create experiences. Our
+          legacy is built on performance, luxury, and innovation. Every vehicle
+          tells a story of elegance and raw power combined.
+        </p>
+        <p class="about-description">
+          Since our inception, we've been committed to delivering not only the
+          finest automobiles, but also unmatched service. Join us in redefining
+          the future of mobility — <i>Elegance in Every Mile</i>.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="media/altlogo.png" alt="About Car" />
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-section">
+      <div class="footer-content">
+        <h3>Orion Luxe</h3>
+        <p>Driven by Passion. Crafted for Excellence.</p>
+
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#models">Models</a></li>
+          <li><a href="#customization">Customization</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+
+        <div class="footer-socials">
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+        </div>
+
+        <p class="footer-bottom-text">
+          © 2025 Orion Luxe. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
