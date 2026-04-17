@@ -6,8 +6,8 @@
     <title>Exotic Car Dealership</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="favicon.ico?v=2" sizes="any" />
-    <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico?v=2" sizes="any" />
+    <link rel="shortcut icon" href="/favicon.ico?v=2" type="image/x-icon" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css" />
@@ -33,7 +33,7 @@
     <!-- NAVBAR -->
     <nav>
       <div class="logo">
-        <img src="media/logo-no-background.png" alt="Logo" />
+        <img src="/media/logo-no-background.png" alt="Logo" />
       </div>
     </nav>
 
@@ -42,7 +42,10 @@
       <!-- HOME / VIDEO -->
       <div class="video-container" id="home">
         <video autoplay muted loop id="video-bg">
-          <source src="media/2229697-hd_1920_1080_30fps.mp4" type="video/mp4" />
+          <source
+            src="/media/2229697-hd_1920_1080_30fps.mp4"
+            type="video/mp4"
+          />
         </video>
         <div class="quote-overlay">
           <p>
@@ -57,20 +60,20 @@
       <section
         class="models-section"
         id="models"
-        style="background-image: url('media/model1.jpg')"
+        style="background-image: url('/media/model1.jpg')"
       >
         <h2>Our Models</h2>
         <div class="models-container">
-          <div class="model-name" onclick="changeModel('media/model1.jpg')">
+          <div class="model-name" onclick="changeModel('/media/model1.jpg')">
             Rolls Royce Ghost
           </div>
-          <div class="model-name" onclick="changeModel('media/model2.jpg')">
+          <div class="model-name" onclick="changeModel('/media/model2.jpg')">
             Porsche Carrera GT
           </div>
-          <div class="model-name" onclick="changeModel('media/model3.jpg')">
+          <div class="model-name" onclick="changeModel('/media/model3.jpg')">
             BMW Sedan
           </div>
-          <div class="model-name" onclick="changeModel('media/model4.jpg')">
+          <div class="model-name" onclick="changeModel('/media/model4.jpg')">
             Toyota Supra
           </div>
         </div>
@@ -100,7 +103,7 @@
         <!-- RIGHT: Preview -->
         <div class="car-preview-area">
           <div class="car-preview">
-            <img src="media/logo.png" alt="Car Preview" id="car-image" />
+            <img src="/media/logo.png" alt="Car Preview" id="car-image" />
           </div>
         </div>
       </div>
@@ -122,7 +125,7 @@
         </p>
       </div>
       <div class="about-image">
-        <img src="media/altlogo.png" alt="About Car" />
+        <img src="/media/altlogo.png" alt="About Car" />
       </div>
     </section>
 

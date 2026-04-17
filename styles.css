@@ -14,7 +14,7 @@ body {
   color: #fff;
   background-color: #000;
   overflow-x: hidden;
-  cursor: url("media/cursor-icon.png"), auto;
+  cursor: url("/media/cursor-icon.png"), auto;
 }
 
 /* CUSTOM SCROLLBAR */

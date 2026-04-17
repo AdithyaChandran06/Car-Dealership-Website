@@ -11,28 +11,28 @@ const colorButtons = document.querySelectorAll(".color-button");
 // Mapping: Car Model + Color → Image path
 const carImages = {
   "Rolls Royce Ghost": {
-    white: "media/white.jpeg",
-    black: "media/black.jpeg",
-    red: "media/red.jpeg",
-    blue: "media/blue.jpeg",
+    white: "/media/white.jpeg",
+    black: "/media/black.jpeg",
+    red: "/media/red.jpeg",
+    blue: "/media/blue.jpeg",
   },
   "Porsche Carrera GT": {
-    white: "media/white.jpeg",
-    black: "media/black.jpeg",
-    red: "media/red.jpeg",
-    blue: "media/blue.jpeg",
+    white: "/media/white.jpeg",
+    black: "/media/black.jpeg",
+    red: "/media/red.jpeg",
+    blue: "/media/blue.jpeg",
   },
   "BMW Sedan": {
-    white: "media/white.jpeg",
-    black: "media/black.jpeg",
-    red: "media/red.jpeg",
-    blue: "media/blue.jpeg",
+    white: "/media/white.jpeg",
+    black: "/media/black.jpeg",
+    red: "/media/red.jpeg",
+    blue: "/media/blue.jpeg",
   },
   "Toyota Supra": {
-    white: "media/white.jpeg",
-    black: "media/black.jpeg",
-    red: "media/red.jpeg",
-    blue: "media/blue.jpeg",
+    white: "/media/white.jpeg",
+    black: "/media/black.jpeg",
+    red: "/media/red.jpeg",
+    blue: "/media/blue.jpeg",
   },
 };
 
