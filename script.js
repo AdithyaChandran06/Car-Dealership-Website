@@ -7,6 +7,8 @@ const carSelect = document.querySelector(".car-select");
 const carPreview = document.querySelector(".car-preview");
 const carImage = document.getElementById("car-image");
 const colorButtons = document.querySelectorAll(".color-button");
+let selectedCar = "";
+let selectedColor = "white";
 
 // Mapping: Car Model + Color → Image path
 const carImages = {
@@ -36,22 +38,33 @@ const carImages = {
   },
 };
 
-// Reset when selecting car
+function renderPreview() {
+  if (!selectedCar || !carImages[selectedCar]) {
+    return;
+  }
+
+  carImage.src = carImages[selectedCar][selectedColor] || carImages[selectedCar].white;
+  carImage.style.display = "block";
+  carPreview.style.backgroundColor = "white";
+}
+
+function selectCar(carName) {
+  selectedCar = carName;
+  carSelect.value = carName;
+  renderPreview();
+}
+
 carSelect.addEventListener("change", () => {
-  carImage.style.display = "none"; // Hide image again
+  selectedCar = carSelect.value;
+  selectedColor = "white";
+  renderPreview();
 });
 
 // When clicking color button
 colorButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    const selectedCar = carSelect.value;
-    const selectedColor = button.getAttribute("data-color");
+    selectedColor = button.getAttribute("data-color");
 
-    if (selectedCar && selectedColor && carImages[selectedCar]) {
-      // Set the new image source
-      carImage.src = carImages[selectedCar][selectedColor];
-      carImage.style.display = "block";
-      carPreview.style.backgroundColor = "white"; // Set a clean background if needed
-    }
+    renderPreview();
   });
 });
